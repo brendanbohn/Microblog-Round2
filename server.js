@@ -14,7 +14,9 @@ app.use("/static", express.static("public"));
 // body parser config to accept our datatypes
 app.use(bodyParser.urlencoded({ extended: true })); 
 
-var db = require('./models/index.js');   
+var db = require('./models/index.js');
+
+var numPosts = 0;
 
 
 //ROUTES
@@ -48,4 +50,6 @@ app.delete('/posts/:_id', function(req, res) {
 	});
 });
 
-
+app.listen(3000, function (){
+  console.log("listening on port 3000");
+});

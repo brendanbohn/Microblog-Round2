@@ -1,0 +1,39 @@
+body {
+	font-family: "Courier New";
+}
+h1 {
+	font-size: 175px;
+	font-weight: normal;
+	color: #4C4C4C;
+}
+h2 {
+	margin: 25px 25px 0 25px;
+}
+#create-post {
+	margin: 60px 0 0 0;
+}
+#create-post-btn {
+	margin: 60px 0 0 0;
+}
+#post-list {
+	margin: 50px 0 0 0;
+}
+#post-count {
+	margin: 20px 0 0 15px;
+	color: gray;
+}
+#post-number {
+	color: #B2B2B2;
+}
+#clear-posts {
+	margin: -15px 0 0 0;
+}
+#modal-cancel-button {
+	margin: 25px;
+}
+#modal-clear-button {
+	margin: 25px 25px 25px 0;
+}
+.close {
+	margin: 0 0 0 20px;
+}
