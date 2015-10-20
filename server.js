@@ -40,12 +40,13 @@ app.post('/posts', function(req, res) {
 });
 
 // DELETE route
-app.delete('/posts/:_id', function(req, res) {
-	console.log('post id is ', req.params._id);
-	db.Post.find({
-		_id: req.params._id
+app.delete('/posts/:id', function(req, res) {
+	console.log('delete this post: ', req.params.id);
+	db.Post.findOne({
+		_id: req.params.id
 	}).remove(function(err, post) {
-		console.log("post deleted");
+		if (err) console.log(err);
+		// console.log("post deleted: ", post._id, post.postBody);
 		res.json("The post is gone");
 	});
 });

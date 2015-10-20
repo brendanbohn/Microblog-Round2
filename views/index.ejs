@@ -45,7 +45,7 @@
 
         <div id="post-list">
           <% for (var i=0; i<posts.length; i++) {%>
-            <p class="list-group-item"> <%= posts[i].postBody %> <span class="pull-right" id=" <%= posts[i]._id %> "><button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></p>
+            <p class="list-group-item"> <%= posts[i].postBody %> <span class="pull-right"><button data-id="<%= posts[i]._id %> " type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></p>
           <% }; %>
         </div>
       </div>
